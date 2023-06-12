@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header 검증 완료  - html 한정 -->
+    <!-- header = div -> 시각장애인을 위한 분류이름? 정도
+    header - nav   - main || section  - footer 
+    나머지 애매한 것 : div로 통일
+    -->
+    <header class="top">
+      <!-- 본문 전까지. -->
+
+      <div class="chuga_event">
+        <div class="slick-list"></div>
+        <!--we eat kakao tab?? JS todo-->
+        <h1>위잇 카카오 친구 추가하고 3천원 쿠폰 받기</h1>
+      </div>
+
+      <!--메뉴 네비게이션-->
+      <nav id="nav">
+        <a href="https://delight.weeat.kr">
+          <img src="img/weeat.jpg" alt="brand_logo" stlye="width=112px" />
+        </a>
+
+        <ul class="menu">
+          <li class="gudoksincheong">
+            <span class="cudoksincheong">구독신청</span>
+          </li>
+
+          <li class="menu_board">
+            <span class="menu_board">메뉴표</span>
+          </li>
+
+          <li class="gongji_board">
+            <a class="gongji_board" href="https://delight.weeat.kr/notice"
+              >공지사항</a
+            >
+          </li>
+
+          <li class="event">
+            <a class="event" href="https://delight.weeat.kr/event"> </a>
+          </li>
+
+          <li class="lunchbox">
+            <a class="lunchbox" href="https://delight.weeat.kr/lunchbox">
+              <img
+                src="/img/lunchbox.png"
+                alt="런치박스"
+                style="width: 100px"
+              />
+            </a>
+          </li>
+
+          <li class="jaju_question">
+            <a class="jaju_question" href="https://delight.weeat.kr/faq"
+              >자주 묻는 질문
+            </a>
+          </li>
+        </ul>
+
+        <!-- 아 왜 안뜨냐 로그인버튼
+        <div class=" join_button"> 
+          <a class=" login_and_join" href="/login"></a>
+          <img src="/img/user.png" alt="회원가입">
+          </div> -->
+      </nav>
+      <!-- nav end-->
+    </header>
+    <!--header end-->
+
+    <!-- main 검증 완료 - html 한정 -->
+    <div class="main">
+      <!--본문-->
+      <!--광고슬라이드1-->
+      <div class="광고슬라이드" style="margin-top: 0px">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/jjgu1.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/jjgu2.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/jjgu3.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/jjgu4.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/jjgu5.jpeg" style="width: 100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <!--slideshow-container-->
+      </div>
+
+      <!-- food type container -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('food1')">
+          베이직
+        </button>
+        <button class="btn" onclick="filterSelection('food2')">밸런스</button>
+        <button class="btn" onclick="filterSelection('food3')">플러스</button>
+        <button class="btn" onclick="filterSelection('food4')">가정식</button>
+      </div>
+
+      <!-- portfolio 베이직, 밸런스,플러스,가정식 -->
+      <div class="portfolio">
+        <div class="row">
+          <div class="column food1">
+            <div class="content">
+              <img src="img/jjgu1.jpeg" alt="베이직" style="width: 50%" />
+              <h4>가성비 있는 한 끼 식단 6,900원</h4>
+              <p>
+                2~3가지의 조합으로 가장 심플하며 가성비 있는 한 끼를 원하시는 분
+                들을 위한 식단입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="column food2">
+            <div class="content">
+              <img src="img/jjgu2.jpeg" alt="밸런스" style="width: 50%" />
+              <h4>나를 위한 신선하고 건강한 식단 7,900원</h4>
+              <p>
+                1~3가지 조합으로 탄단지가 골고루 균형 잡혀 있어 건강한 식습관
+                형성을 위한 분들을 위한 식단입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="column food3">
+            <div class="content">
+              <img src="img/jjgu3.jpeg" alt="플러스" style="width: 50%" />
+              <h4>더 든든하고 푸짐한 한 끼 8,900원</h4>
+              <p>
+                다양한 상품군이 3~4가지 정도의 조합으로 구성되어 든든한 한 끼를
+                원하시는 분들을 위한 식단입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="column food4">
+            <div class="content">
+              <img src="img/jjgu4.jpeg" alt="가정식" style="width: 50%" />
+              <h4>정성스런 한상 차림 19,900원</h4>
+              <p>
+                가정식은 밥을 제외한 메인 반찬, 반찬, 국으로 구성되었습니다.
+                2~3인분으로 푸짐하게 드실 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--row end-->
+      </div>
+      <!--portfolio end-->
+
+      <div id="footer" class="grid_12">
+        <p>&copy; Copyright 2023.06.07</p>
+      </div>
+    </div>
+    <!--main end-->
+
+    <script src="app.js"></script>
+  </body>
+</html>
