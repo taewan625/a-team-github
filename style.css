@@ -1,0 +1,248 @@
+#footer {
+  background-color: #efefef;
+  margin-top: 20px;
+  padding: 10px 0px 5px 0px;
+}
+
+.chuga_event {
+  position: relative;
+  background-color: rgb(0, 199, 40);
+  text-decoration: none;
+  color: #eef5ef;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: NanumSquare;
+  vertical-align: baseline;
+}
+
+/*네비게이션 바*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #030303;
+  font-size: 15px;
+}
+
+nav {
+  width: 100%;
+  overflow: hidden;
+  height: 80px;
+  background-color: white;
+  margin: auto;
+}
+
+#nav {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#nav > a {
+  line-height: 80px;
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  left: 30px;
+}
+
+/*로그인 이미지 */
+/*회원가입*/
+
+#nav > ul {
+  display: inline-block;
+}
+#nav > ul li {
+  float: left;
+  line-height: 80px;
+  padding: 0 30px;
+}
+
+/*광고 슬라이드쇼 css*/
+.slideshow-container {
+  box-sizing: border-box;
+  max-width: 800px;
+  max-height: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* 이미지 숨기기*/
+.mySlides {
+  display: none;
+}
+
+/* <> 버튼(이전, 다음) */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* 오른쪽에 > 버튼 배치 */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*호버, 약간 검정투명? */
+.prev:hover,
+.next:hover {
+  background-color: rgba(110, 107, 107, 0.8);
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/*색 변화? */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*베이직,밸런스,가정식*/
+.portfolio {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* 각 열 사이에 패딩 추가? */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  display: none;
+}
+
+/*부동소수점 지우기라는데 이게 뭘까? -> 이거 공부해야됨.*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.portfolio {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* 각 열 사이에 패딩 추가? */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* 사진 옆으로나오게 만드는거? */
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide columns by default */
+}
+
+/*부동소수점 지우기라는데 이게 뭘까? -> 이거 공부해야됨.*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/*"show" 클래스가 필터링된 요소에 추가 */
+.show {
+  display: block;
+}
+
+/* 버튼*/
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  color: rgb(200, 193, 193);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgb(51, 179, 37);
+}
+
+/* 현재 누른 버튼 색 변한거.*/
+.btn.active {
+  color: rgb(51, 179, 37);
+}
